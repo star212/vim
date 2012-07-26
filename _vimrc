@@ -47,6 +47,17 @@ set nobackup
 " set fdm=indent
 " Enable filetype plugin
 filetype plugin on
+"解决acp和snipMate的冲突"
+let g:acp_behaviorSnipmateLength=1
+"绑定补全类型"
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType c set omnifunc=ccomplete#Complete
+
 "自动缩进
 filetype indent off
 "制表符长度
@@ -160,3 +171,26 @@ nmap <F5> :!%<cr>
 nmap <F6> :%!tidy -i -f err.txt<cr>
 "插入时间
 imap <leader>t <c-r>=strftime('%c')<cr>
+
+
+
+"FuzzyFinder"
+""|:FufFile|         - File mode (|fuf-file-mode|) 
+""|:FufCoverageFile| - Coverage-File mode (|fuf-coveragefile-mode|) 
+""|:FufDir|          - Directory mode (|fuf-dir-mode|) 
+""|:FufMruFile|      - MRU-File mode (|fuf-mrufile-mode|) 
+""|:FufMruCmd|       - MRU-Command mode (|fuf-mrucmd-mode|) 
+""|:FufBookmarkFile| - Bookmark-File mode (|fuf-bookmarkfile-mode|) 
+""|:FufBookmarkDir|  - Bookmark-Dir mode (|fuf-bookmarkdir-mode|) 
+""|:FufTag|          - Tag mode (|fuf-tag-mode|) 
+""|:FufBufferTag|    - Buffer-Tag mode (|fuf-buffertag-mode|) 
+""|:FufTaggedFile|   - Tagged-File mode (|fuf-taggedfile-mode|) 
+""|:FufJumpList|     - Jump-List mode (|fuf-jumplist-mode|) 
+""|:FufChangeList|   - Change-List mode (|fuf-changelist-mode|) 
+""|:FufQuickfix|     - Quickfix mode (|fuf-quickfix-mode|) 
+""|:FufLine|         - Line mode (|fuf-line-mode|) 
+""|:FufHelp|         - Help mode (|fuf-help-mode|) 
+""
+nmap <F2> :FufFile<cr>
+
+
