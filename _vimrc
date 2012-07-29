@@ -191,6 +191,6 @@ imap <leader>t <c-r>=strftime('%c')<cr>
 ""|:FufLine|         - Line mode (|fuf-line-mode|) 
 ""|:FufHelp|         - Help mode (|fuf-help-mode|) 
 ""
-""nmap <F2> :FufFile<cr>
+nmap <F2> :FufFile<cr>
 
 
