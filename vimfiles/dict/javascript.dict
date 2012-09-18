@@ -150,6 +150,7 @@ collapseToEnd
 collapseToStart
 color
 colorDepth
+comfirm
 compatMode
 complete
 concat
@@ -277,3 +278,6 @@ getMonth
 getRangeAt
 getSeconds
 getSelectio
+
+stopPropagation
+preventDefault
