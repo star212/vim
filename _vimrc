@@ -65,11 +65,13 @@ set tabstop=4
 set shiftwidth=4
 "用空格代替tab键，据说tab在不同操作系统中会有问题"
 set expandtab
+
 "退格键可删除断行
 set backspace=indent,eol,start
 
 " Set to auto read when a file is changed from the outside
 set autoread
+
 "缩进指示线"
 "set list listchars=tab:\|\ 
 "hi SpecialKey guifg=#eeeeee 
