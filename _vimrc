@@ -8,6 +8,7 @@ set guifont=Consolas:h14:cANSI
 "set gfw=幼圆:h12:cGB2312
 
 
+
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
