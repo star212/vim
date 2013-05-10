@@ -5,7 +5,7 @@ set termencoding=cp936
 language messages zh_CN.UTF-8 
 "字体设置
 set guifont=Consolas:h14:cANSI
-set gfw=幼圆:h12:cGB2312
+"set gfw=幼圆:h12:cGB2312
 
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
