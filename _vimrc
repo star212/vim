@@ -1,11 +1,11 @@
-"×Ö·û±àÂë
+"å­—ç¬¦ç¼–ç 
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set encoding=utf-8
 set termencoding=cp936
 language messages zh_CN.UTF-8 
-"×ÖÌåÉèÖÃ
+"å­—ä½“è®¾ç½®
 set guifont=Consolas:h14:cANSI
-set gfw=Ó×Ô²:h12:cGB2312
+set gfw=å¹¼åœ†:h12:cGB2312
 
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
@@ -47,9 +47,9 @@ set nobackup
 " set fdm=indent
 " Enable filetype plugin
 filetype plugin on
-"½â¾öacpºÍsnipMateµÄ³åÍ»"
+"è§£å†³acpå’ŒsnipMateçš„å†²çª"
 let g:acp_behaviorSnipmateLength=1
-"°ó¶¨²¹È«ÀàĞÍ"
+"ç»‘å®šè¡¥å…¨ç±»å‹"
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
@@ -58,21 +58,21 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 
-"×Ô¶¯Ëõ½ø
+"è‡ªåŠ¨ç¼©è¿›
 filetype indent off
-"ÖÆ±í·û³¤¶È
+"åˆ¶è¡¨ç¬¦é•¿åº¦
 set tabstop=4
 set shiftwidth=4
-"ÓÃ¿Õ¸ñ´úÌætab¼ü£¬¾İËµtabÔÚ²»Í¬²Ù×÷ÏµÍ³ÖĞ»áÓĞÎÊÌâ"
+"ç”¨ç©ºæ ¼ä»£æ›¿tabé”®ï¼Œæ®è¯´tabåœ¨ä¸åŒæ“ä½œç³»ç»Ÿä¸­ä¼šæœ‰é—®é¢˜"
 set expandtab
 
-"ÍË¸ñ¼ü¿ÉÉ¾³ı¶ÏĞĞ
+"é€€æ ¼é”®å¯åˆ é™¤æ–­è¡Œ
 set backspace=indent,eol,start
 
 " Set to auto read when a file is changed from the outside
 set autoread
 
-"Ëõ½øÖ¸Ê¾Ïß"
+"ç¼©è¿›æŒ‡ç¤ºçº¿"
 "set list listchars=tab:\|\ 
 "hi SpecialKey guifg=#eeeeee 
 
@@ -82,7 +82,7 @@ set autoread
 
 set hlsearch "Highlight search things
 set incsearch "Make search act like search in modern browsers
-set cursorcolumn "¹â±êÁĞ¸ßÁÁ"
+set cursorcolumn "å…‰æ ‡åˆ—é«˜äº®"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -102,7 +102,7 @@ set ruler
 
 map <f10> :NERDTreeToggle<cr>
 
-"À¨ºÅ²¹È«
+"æ‹¬å·è¡¥å…¨
 :inoremap " ""<ESC>i
 :inoremap ' ''<ESC>i
 :inoremap ( ()<ESC>i
@@ -136,12 +136,12 @@ return "{\<ENTER>}\<ESC>O"
 endif
 endf
 
-"htmlËõ½ø
+"htmlç¼©è¿›
 :let g:html_indent_script1 = "inc"
 :let g:html_indent_style1 = "inc"
 :let g:html_indent_div1 = "inc"
 
-"ÉèÖÃÀ©Õ¹ÃûµÄÎÄ¼şÀàĞÍ
+"è®¾ç½®æ‰©å±•åçš„æ–‡ä»¶ç±»å‹
 if has("autocmd")
     autocmd BufRead,BufNewFile *.html,*.shtml,*.vm set filetype=html.xhtml
 endif
@@ -150,7 +150,7 @@ au BufRead,BufNewFile *.js set ft=javascript syntax=jquery
 au BufRead,BufNewFile *.less set ft=less.css syntax=less.css
 au BufRead,BufNewFile *.ftl set ft=ftl.xhtml.html syntax=html
 
-"ÉèÖÃ×Öµä
+"è®¾ç½®å­—å…¸
 autocmd filetype javascript set dictionary=$VIM/vimfiles/dict/javascript.dict
 autocmd filetype css set dictionary=$VIM/vimfiles/dict/css.dict
 
@@ -167,11 +167,11 @@ let g:vimrc_homepage='http://www.quxing.info'
 
 nmap <F4> :AuthorInfoDetect<cr> 
 
-"¿ì½İ¼üÉèÖÃ
+"å¿«æ·é”®è®¾ç½®
 nmap <F5> :!%<cr>
-"¶Ôµ±Ç°ÎÄ¼şÔËĞĞµÄhtml tidy½Å±¾,ÓÃÀ´Êä³öhtml´íÎó»¹¿ÉÒÔ£¬¸ñÊ½»¯ÊÇ2¸ö¿Õ¸ñËõ½øµÄ"
+"å¯¹å½“å‰æ–‡ä»¶è¿è¡Œçš„html tidyè„šæœ¬,ç”¨æ¥è¾“å‡ºhtmlé”™è¯¯è¿˜å¯ä»¥ï¼Œæ ¼å¼åŒ–æ˜¯2ä¸ªç©ºæ ¼ç¼©è¿›çš„"
 nmap <F6> :%!tidy -i -f err.txt<cr>
-"²åÈëÊ±¼ä
+"æ’å…¥æ—¶é—´
 imap <leader>t <c-r>=strftime('%c')<cr>
 
 
