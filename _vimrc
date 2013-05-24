@@ -1,11 +1,14 @@
 "字符编码
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set encoding=utf-8
-set termencoding=cp936
+"set termencoding=cp936
+"解决mac下终端中文显示的问题
+let &termencoding=&encoding
 language messages zh_CN.UTF-8 
 "字体设置
-set guifont=Consolas:h14:cANSI
-"set gfw=幼圆:h12:cGB2312
+set guifont=Monaco:h14
+"set gfw=Monaco:h20:cANSI
+set gfw="幼圆:h12"
 
 
 source $VIMRUNTIME/vimrc_example.vim
