@@ -153,6 +153,7 @@ endif
 au BufRead,BufNewFile *.js set ft=javascript syntax=jquery
 au BufRead,BufNewFile *.less set ft=less.css syntax=less.css
 au BufRead,BufNewFile *.ftl set ft=ftl.xhtml.html syntax=html
+au BufRead,BufNewFile *.md set syntax=mkd
 
 "设置字典
 autocmd filetype javascript set dictionary=$VIM/vimfiles/dict/javascript.dict
